@@ -37,18 +37,23 @@ class GitHubService:
         return pr
 
     def create_release(self, tag_name: str, release_notes: str, header_image_url: str = None):
-        """
-        指定されたタグ名でGitHubリリースを作成し、生成されたリリースノートを設定します。
-        ヘッダー画像のURLが提供された場合、それをリリースノートの先頭に追加します。
-        """
         try:
+            # リポジトリの最新コミットを取得
+            commits = list(self.repo.get_commits())
+            if not commits:
+                logger.error("リポジトリにコミットが存在しません。")
+                return
+
+            latest_commit = commits[0]
+            logger.info(f"最新のコミット: {latest_commit.sha}")
+
             # タグの存在確認
             try:
                 self.repo.get_git_ref(f"refs/tags/{tag_name}")
                 logger.info(f"タグ {tag_name} は既に存在します。")
             except Exception:
                 logger.info(f"タグ {tag_name} が存在しないため、作成します。")
-                self.repo.create_git_ref(f"refs/tags/{tag_name}", self.repo.get_commits()[0].sha)
+                self.repo.create_git_ref(f"refs/tags/{tag_name}", latest_commit.sha)
 
             if header_image_url:
                 release_notes = f"![Release Header]({header_image_url})\n\n{release_notes}"
