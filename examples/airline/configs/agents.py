@@ -5,59 +5,59 @@ from data.routines.prompts import STARTER_PROMPT
 
 from swarm import Agent
 
-
+# 各エージェントへの転送関数
 def transfer_to_flight_modification():
     return flight_modification
-
 
 def transfer_to_flight_cancel():
     return flight_cancel
 
-
 def transfer_to_flight_change():
     return flight_change
-
 
 def transfer_to_lost_baggage():
     return lost_baggage
 
-
 def transfer_to_triage():
-    """Call this function when a user needs to be transferred to a differnt agent and a different policy.
-    For instance, if a user is asking about a topic that is not handled by the current agent, call this function.
+    """
+    ユーザーを別のエージェントや別のポリシーに転送する必要がある場合にこの関数を呼び出します。
+    例えば、ユーザーが現在のエージェントでは扱えないトピックについて質問している場合などに使用します。
     """
     return triage_agent
 
-
+# 振り分けエージェントの指示を生成する関数
 def triage_instructions(context_variables):
     customer_context = context_variables.get("customer_context", None)
     flight_context = context_variables.get("flight_context", None)
-    return f"""You are to triage a users request, and call a tool to transfer to the right intent.
-    Once you are ready to transfer to the right intent, call the tool to transfer to the right intent.
-    You dont need to know specifics, just the topic of the request.
-    When you need more information to triage the request to an agent, ask a direct question without explaining why you're asking it.
-    Do not share your thought process with the user! Do not make unreasonable assumptions on behalf of user.
-    The customer context is here: {customer_context}, and flight context is here: {flight_context}"""
+    return f"""ユーザーのリクエストを振り分け、適切な意図に転送するためのツールを呼び出してください。
+    適切な意図に転送する準備ができたら、ツールを呼び出して転送してください。
+    詳細を知る必要はありません。リクエストのトピックだけを理解すればよいです。
+    エージェントにリクエストを振り分けるためにより多くの情報が必要な場合は、理由を説明せずに直接質問してください。
+    思考プロセスをユーザーと共有しないでください！ユーザーに代わって不合理な仮定をしないでください。
+    顧客コンテキストはこちらです: {customer_context}、フライトコンテキストはこちらです: {flight_context}"""
 
-
+# 各エージェントの定義
+# 振り分けエージェント：ユーザーのリクエストを適切なエージェントに振り分ける
 triage_agent = Agent(
-    name="Triage Agent",
+    name="振り分けエージェント",
     instructions=triage_instructions,
     functions=[transfer_to_flight_modification, transfer_to_lost_baggage],
 )
 
+# フライト変更エージェント：フライトの変更やキャンセルに関するリクエストを処理
 flight_modification = Agent(
-    name="Flight Modification Agent",
-    instructions="""You are a Flight Modification Agent for a customer service airlines company.
-      You are an expert customer service agent deciding which sub intent the user should be referred to.
-You already know the intent is for flight modification related question. First, look at message history and see if you can determine if the user wants to cancel or change their flight.
-Ask user clarifying questions until you know whether or not it is a cancel request or change flight request. Once you know, call the appropriate transfer function. Either ask clarifying questions, or call one of your functions, every time.""",
+    name="フライト変更エージェント",
+    instructions="""あなたは航空会社のカスタマーサービスのフライト変更エージェントです。
+      ユーザーがどのサブ意図に紹介されるべきかを決定する専門のカスタマーサービスエージェントです。
+意図がフライト変更関連の質問であることは既に分かっています。まず、メッセージ履歴を見て、ユーザーがフライトをキャンセルしたいのか変更したいのかを判断できるか確認してください。
+ユーザーがキャンセルリクエストなのか変更リクエストなのかが分かるまで、明確化のための質問をしてください。分かったら、適切な転送関数を呼び出してください。毎回、明確化のための質問をするか、関数の1つを呼び出してください。""",
     functions=[transfer_to_flight_cancel, transfer_to_flight_change],
     parallel_tool_calls=False,
 )
 
+# フライトキャンセルエージェント：フライトのキャンセルに特化した処理を行う
 flight_cancel = Agent(
-    name="Flight cancel traversal",
+    name="フライトキャンセル処理",
     instructions=STARTER_PROMPT + FLIGHT_CANCELLATION_POLICY,
     functions=[
         escalate_to_agent,
@@ -68,8 +68,9 @@ flight_cancel = Agent(
     ],
 )
 
+# フライト変更エージェント：フライトの変更に特化した処理を行う
 flight_change = Agent(
-    name="Flight change traversal",
+    name="フライト変更処理",
     instructions=STARTER_PROMPT + FLIGHT_CHANGE_POLICY,
     functions=[
         escalate_to_agent,
@@ -80,8 +81,9 @@ flight_change = Agent(
     ],
 )
 
+# 手荷物紛失エージェント：手荷物の紛失に関する問い合わせを処理する
 lost_baggage = Agent(
-    name="Lost baggage traversal",
+    name="手荷物紛失処理",
     instructions=STARTER_PROMPT + LOST_BAGGAGE_POLICY,
     functions=[
         escalate_to_agent,
@@ -90,3 +92,9 @@ lost_baggage = Agent(
         case_resolved,
     ],
 )
+
+# 解説：
+# このファイルでは、各種エージェントとそれらの転送関数を定義しています。
+# 各エージェントは特定の役割（振り分け、フライト変更、キャンセル、手荷物紛失）を持ち、
+# それぞれに適した指示と利用可能な関数が設定されています。
+# エージェント間の転送を管理することで、複雑な顧客サービスのフローを実現しています。
