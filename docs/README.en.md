@@ -1,149 +1,116 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Sunwood-ai-labs/HarmonAI_III/refs/heads/main/docs/HarmonAI-III.png" width="100%">
-  <h1 align="center">🌟 HarmonAI III 🌟</h1>
+  <img src="https://raw.githubusercontent.com/Sunwood-ai-labs/swarm-sample-box/refs/heads/main/docs/swarm-sample-box.png" width="100%">
+  <h1 align="center">🌟 swarm-sample-box 🌟</h1>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III">
-    <img alt="GitHub Repo" src="https://img.shields.io/badge/github-HarmonAI__III-blue?logo=github">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box">
+    <img alt="GitHub Repo" src="https://img.shields.io/badge/github-swarm__sample__box-blue?logo=github">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/blob/main/LICENSE">
-    <img alt="License" src="https://img.shields.io/github/license/Sunwood-ai-labs/HarmonAI_III?color=green">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/Sunwood-ai-labs/swarm-sample-box?color=green">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/stargazers">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/Sunwood-ai-labs/HarmonAI_III?style=social">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/Sunwood-ai-labs/swarm-sample-box?style=social">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/releases">
-    <img alt="GitHub release" src="https://img.shields.io/github/v/release/Sunwood-ai-labs/HarmonAI_III?include_prereleases&style=flat-square">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/releases">
+    <img alt="GitHub release" src="https://img.shields.io/github/v/release/Sunwood-ai-labs/swarm-sample-box?include_prereleases&style=flat-square">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/graphs/commit-activity">
-    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Sunwood-ai-labs/HarmonAI_III">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/graphs/commit-activity">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Sunwood-ai-labs/swarm-sample-box">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/pulls">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/pulls">
     <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   </a>
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Sunwood-ai-labs/HarmonAI_III">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Sunwood-ai-labs/swarm-sample-box">
   <img alt="Development Status" src="https://img.shields.io/badge/status-active-success.svg">
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/issues">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/Sunwood-ai-labs/HarmonAI_III">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/Sunwood-ai-labs/swarm-sample-box">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/network/members">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/Sunwood-ai-labs/HarmonAI_III?style=social">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/Sunwood-ai-labs/swarm-sample-box?style=social">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/watchers">
-    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Sunwood-ai-labs/HarmonAI_III?style=social">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/watchers">
+    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Sunwood-ai-labs/swarm-sample-box?style=social">
   </a>
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Sunwood-ai-labs/HarmonAI_III">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Sunwood-ai-labs/HarmonAI_III">
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/graphs/contributors">
-    <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Sunwood-ai-labs/HarmonAI_III">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/graphs/contributors">
+    <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Sunwood-ai-labs/swarm-sample-box">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/issues?q=is%3Aissue+is%3Aclosed">
-    <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/Sunwood-ai-labs/HarmonAI_III">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/issues?q=is%3Aissue+is%3Aclosed">
+    <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/Sunwood-ai-labs/swarm-sample-box">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/pulls?q=is%3Apr+is%3Aclosed">
-    <img alt="GitHub closed PRs" src="https://img.shields.io/github/issues-pr-closed/Sunwood-ai-labs/HarmonAI_III">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/pulls?q=is%3Apr+is%3Aclosed">
+    <img alt="GitHub closed PRs" src="https://img.shields.io/github/issues-pr-closed/Sunwood-ai-labs/swarm-sample-box">
   </a>
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Sunwood-ai-labs/HarmonAI_III">
-  <img alt="GitHub search hit counter" src="https://img.shields.io/github/search/Sunwood-ai-labs/HarmonAI_III/goto">
-  <img alt="GitHub code size" src="https://img.shields.io/github/languages/code-size/Sunwood-ai-labs/HarmonAI_III">
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/blob/main/CONTRIBUTING.md">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub search hit counter" src="https://img.shields.io/github/search/Sunwood-ai-labs/swarm-sample-box/goto">
+  <img alt="GitHub code size" src="https://img.shields.io/github/languages/code-size/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/blob/main/CONTRIBUTING.md">
     <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant">
   </a>
-  <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20project%3A&url=https%3A%2F%2Fgithub.com%2FSunwood-ai-labs%2FHarmonAI_III">
-    <img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSunwood-ai-labs%2FHarmonAI_III">
+  <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20project%3A&url=https%3A%2F%2Fgithub.com%2FSunwood-ai-labs%2Fswarm-sample-box">
+    <img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSunwood-ai-labs%2Fswarm-sample-box">
   </a>
-  <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/Sunwood-ai-labs/HarmonAI_III">
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/deployments">
-    <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Sunwood-ai-labs/HarmonAI_III/Production">
+  <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/deployments">
+    <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Sunwood-ai-labs/swarm-sample-box/Production">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/discussions">
-    <img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/Sunwood-ai-labs/HarmonAI_III">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/discussions">
+    <img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/Sunwood-ai-labs/swarm-sample-box">
   </a>
   <img alt="GitHub followers" src="https://img.shields.io/github/followers/Sunwood-ai-labs?style=social">
-  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Sunwood-ai-labs/HarmonAI_III">
-  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/y/Sunwood-ai-labs/HarmonAI_III/main">
-  <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/Sunwood-ai-labs/HarmonAI_III/latest">
+  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/y/Sunwood-ai-labs/swarm-sample-box/main">
+  <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/Sunwood-ai-labs/swarm-sample-box/latest">
 
 
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/actions/workflows/generate-release-notes.yml">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/HarmonAI_III/generate-release-notes.yml?label=generate-auto-release-notes">  
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/actions/workflows/translate-readme.yml">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/HarmonAI_III/generate-release-notes.yml?label=auto-translate-readme">
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/actions/workflows/issue-review.yml">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/HarmonAI_III/generate-release-notes.yml?label=auto-issue-review">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/generate-release-notes.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=generate-auto-release-notes">  
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/translate-readme.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=auto-translate-readme">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/issue-review.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=auto-issue-review">
 </p>
-<h2 align="center">
-  ～ AI-Powered Automated Repository Management Template ～
 
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/blob/main/README.md"><img src="https://img.shields.io/badge/ドキュメント-日本語-white.svg" alt="JA doc"/></a>
-  <a href="https://github.com/Sunwood-ai-labs/HarmonAI_III/blob/main/docs/README.en.md"><img src="https://img.shields.io/badge/english-document-white.svg" alt="EN doc"></a>
+<h2 align="center">
+  ～ Experimental Playground for AI Agent Orchestration ～
+
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/blob/main/README.md"><img src="https://img.shields.io/badge/ドキュメント-日本語-white.svg" alt="JA doc"/></a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/blob/main/docs/README.en.md"><img src="https://img.shields.io/badge/english-document-white.svg" alt="EN doc"></a>
 </h2>
 
 > [!IMPORTANT]
-> HarmonAI III is a template repository developed using [cline (formerly Claude Dev)](https://github.com/clinebot/cline), [SourceSage](https://github.com/Sunwood-ai-labs/SourceSage), and [claude.ai](https://claude.ai/).  The majority of release notes, README, and commit messages are generated using the latest AI technologies.
+>  swarm-sample-box is a template repository developed using [cline (formerly Claude Dev)](https://github.com/clinebot/cline), [SourceSage](https://github.com/Sunwood-ai-labs/SourceSage), and [claude.ai](https://claude.ai/).  Most of the release notes, README, and commit messages were generated using the latest AI technology.
+
 
 ## 🚀 Project Overview
 
-HarmonAI III is an innovative **AI repository starter kit** integrating AIRA and IRIS. This repository aims to dramatically improve developer efficiency by providing the structure and workflow for AI development projects leveraging LLMs. Version: `v1.2.0`
-
-
-## 🆕 Latest News
-
-- 🎉 v1.2.0 released: Added GitHub Shields to the README, added collaborator invitation functionality, and updated documentation.
-
+Swarm Sample Box is an AI agent experiment repository utilizing "Swarm," an experimental multi-agent orchestration framework developed by OpenAI. This repository provides a lightweight and flexible solution for efficiently coordinating multiple AI agents to perform complex tasks, supporting researchers and developers in their studies and experiments.
 
 ## ✨ Key Features
 
-1. **Integrated AI Toolset**: Provides the functionality of AIRA and IRIS in a single package.
-2. **Ready to Use**: Easily create a repository with a high-quality initial structure by using it as a template.
-3. **Automated Development Workflow**: Automates commit message generation, release note creation, and issue management.
-4. **Multilingual Support**: Supports international project deployment through automatic README translation.
-5. **Flexible Customization**: Easily adaptable to the needs of your project.
-6. **Automated Collaborator Invitation**: Collaborator invitation script using the GitHub API.
+1. **Diverse Agent Samples:** Provides various implementation examples of AI agents, ranging from basic interactions to complex task processing.
+2. **Flexible Customization:** Each sample is easily extensible and modifiable, adaptable to unique use cases.
+3. **Integrated Experimental Environment:** Offers a practical experimental environment, including Docker integration and vector database (Qdrant) connectivity.
+4. **Automated Evaluation Function:** Some samples include automated evaluation scripts for measuring agent performance.
 
+## 🔧 Setup and Usage
 
-## 🔧 How to Use
-
-### AIRA Example:
-```bash
-aira --mode sourcesage commit  --config=.aira\config.dev.commit.yml --ss-model-name="gpt-4o-mini" --llm-output="llm_output.md"
-```
-
-### IRIS Example:
-
-Refer to the documentation for each component for detailed usage instructions.
-
-
-## 📦 Installation Instructions
-
-1. Use this repository as a template to create a new repository.
-2. Clone the repository locally.
-3. Install the necessary dependencies:
+1. Clone the repository:
    ```bash
-   pip install -r requirements.txt
+   git clone https://github.com/Sunwood-ai-labs/swarm-sample-box.git
+   cd swarm-sample-box
    ```
-4. Customize the AIRA and IRIS configuration files.
-5. Check the GitHub Actions settings and configure environment variables as needed.
-6. Open the `.github/release_notes/.sourcesage_releasenotes_iris.yml` file and change the value of `repo-name:` to your new repository name.
 
-
-## 🌿 Setting up the Environment
-
-Follow these steps to set up the HarmonAI III environment:
-
-1. Create a virtual environment:
+2. Create and activate a virtual environment:
    ```bash
-   python3 -m venv .venv
-   ```
-   This creates a virtual environment in the `.venv` directory.
-
-2. Activate the virtual environment:
-   ```bash
+   python -m venv .venv
    source .venv/bin/activate  # Linux/macOS
    .venv\Scripts\activate  # Windows
    ```
@@ -153,93 +120,57 @@ Follow these steps to set up the HarmonAI III environment:
    pip install -r requirements.txt
    ```
 
-These steps will prepare your development environment for HarmonAI III.
-
-
-## 📚 Main Components
-
-### 🤖 [AIRA (AI-Integrated Repository for Accelerated Development)](https://github.com/Sunwood-ai-labs/AIRA)
-- Automated repository creation
-- Automated commit message generation
-
-### 🌈 [IRIS (Intelligent Repository Issue Solver)](https://github.com/Sunwood-ai-labs/IRIS)
-- Automated issue classification
-- Automated solution suggestions
-- Automated release note generation
-- Automated README translation
-
-## 🤝 Automated Collaborator Invitation
-
-HarmonAI III includes a script to automatically invite collaborators to the GitHub repository.  Use it as follows:
-
-1. Create a `.env` file and set the necessary tokens:
-   ```
-   # GitHub access token (for collaborator invitation)
-   GITHUB_TOKEN=your_github_personal_access_token_here
-
-   # The following are examples of tokens that may be used by other functions.  It's convenient to list them for later use.
-   # GITHUB_ACCESS_TOKEN=ghp_xxxxx
-   # YOUR_PERSONAL_ACCESS_TOKEN_IRIS=ghp_yyyyy
-   # GEMINI_API_KEY=AIzzzzz
-   ```
-
-   Note: Include the `.env` file in `.gitignore` to prevent it from being committed to the repository.
-
-2. Run the following command to invite a collaborator:
+4. Set your OpenAI API key:
    ```bash
-   python .github/github_add_collaborator.py Sunwood-ai-labs/HarmonAI_III username_to_invite
+   export OPENAI_API_KEY="your-api-key"
    ```
 
-   Replace `username_to_invite` with the GitHub username you want to invite.
+5. Run a specific sample:
+   ```bash
+   cd examples/<sample_name>
+   python main.py
+   ```
 
-3. Once the script runs successfully, a collaborator invitation will be sent to the specified user.
+## 📚 Sample List
 
-Cautions:
-- This script requires the GitHub token to have appropriate permissions (the `repo` scope).
-- When using it for an organization's repository, ensure that appropriate permissions are granted in the organization's settings.
-- For security reasons, update tokens regularly and grant only the minimum necessary permissions.
-- Never commit information including the `.env` file or tokens to a public repository.
+### 1. Basic
+A minimal implementation example showcasing the basic functions of Swarm.
 
-This feature simplifies the process of adding new contributors to the project. You can efficiently expand your team while maintaining security.
+### 2. Airline
+A multi-agent setup simulating an airline's customer service.
 
-## 🐈 Process Flow
+### 3. Personal Shopper
+An implementation example of a personal shopping assistant agent.
 
+### 4. Support Bot
+An implementation example of a customer support bot, including document search functionality using Qdrant.
 
-```mermaid
-%%{init:{'theme':'base','themeVariables':{'primaryColor':'#024959','primaryTextColor':'#F2C335','primaryBorderColor':'#F2AE30','lineColor':'#A1A2A6','secondaryColor':'#593E25','tertiaryColor':'#F2C335','noteTextColor':'#024959','noteBkgColor':'#F2C335','textColor':'#024959','fontSize':'18px'}}}%%
+### 5. Triage Agent
+An implementation example of a triage agent that distributes user requests to the appropriate agents.
 
-graph LR
-    A[Start] --> B[Repository Conception and Naming]
-    B -->|Human Action| C[HarmonAI III Repository Initialization]
-    C -->|Automated| D[Development Work]
-    D -->|Human Action| E[AIRA Automated Commits]
-    E --> H[IRIS Release Note Generation]
-    H --> I[IRIS Documentation Translation]
-    I --> J[Release]
-    J --> K[End]
+### 6. Weather Agent
+A simple agent implementation that retrieves weather information and performs related tasks.
 
-    class B,D,G human;
-    class E aira;
-    class F,H,I iris;
-    class C auto;
-    class A,J,K process;
+## 🧪 Evaluation Method
 
+Some samples include automated evaluation scripts. To run an evaluation, execute the following command within the sample directory:
+
+```bash
+pytest evals.py
 ```
-
-
 
 ## 🤝 Contributions
 
-HarmonAI III welcomes contributions from the community as an open-source project.  Help improve this template repository through bug reports, feature requests, and pull requests.
+Swarm Sample Box welcomes contributions from the community as an open-source project.  We encourage contributions of all kinds, including adding new samples, improving existing samples, and expanding the documentation.
 
 ## 📄 License
 
-HarmonAI III is released under the [MIT License](LICENSE).
+Swarm Sample Box is released under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-HarmonAI III has been inspired by many open-source projects. We especially thank the developers of AIRA and IRIS.  We also thank iris-s-coon and Maki.
+This project is based on the Swarm framework developed by OpenAI.  We express our deep gratitude to the Swarm developers.
 
 ---
 
-HarmonAI III is an excellent starter kit for achieving an AI-driven development process. Let's start developing innovative AI projects based on this template!
+Start developing and experimenting with innovative AI agent systems using Swarm Sample Box!  For detailed usage instructions and descriptions of each sample, please refer to the README file in the corresponding directory.

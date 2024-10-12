@@ -1,55 +1,56 @@
-# Airline customer service
+# Swarm airline:  航空会社カスタマーサービス
 
-This example demonstrates a multi-agent setup for handling different customer service requests in an airline context using the Swarm framework. The agents can triage requests, handle flight modifications, cancellations, and lost baggage cases.
-This example uses the helper function `run_demo_loop`, which allows us to create an interactive Swarm session.
+![](https://raw.githubusercontent.com/Sunwood-ai-labs/swarm-sample-box/refs/heads/main/docs/Sample01.png)
 
-## Agents
+このサンプルは、Swarmフレームワークを使用して航空会社のコンテキストにおける様々な顧客サービスリクエストを処理するマルチエージェントセットアップを示しています。エージェントはリクエストの振り分け、フライト変更、キャンセル、手荷物紛失ケースを処理できます。
+このサンプルでは、対話式のSwarmセッションを作成できる`run_demo_loop`ヘルパー関数を使用しています。
 
-1. **Triage Agent**: Determines the type of request and transfers to the appropriate agent.
-2. **Flight Modification Agent**: Handles requests related to flight modifications, further triaging them into:
-   - **Flight Cancel Agent**: Manages flight cancellation requests.
-   - **Flight Change Agent**: Manages flight change requests.
-3. **Lost Baggage Agent**: Handles lost baggage inquiries.
+## エージェント
 
-## Setup
+1. **振り分けエージェント**: リクエストの種類を判断し、適切なエージェントに転送します。
+2. **フライト変更エージェント**: フライト変更に関するリクエストを処理し、さらに以下に振り分けます：
+   - **フライトキャンセルエージェント**: フライトキャンセルリクエストを管理します。
+   - **フライト変更エージェント**: フライト変更リクエストを管理します。
+3. **手荷物紛失エージェント**: 手荷物紛失の問い合わせを処理します。
 
-Once you have installed dependencies and Swarm, run the example using:
+## セットアップ
+
+依存関係とSwarmをインストールしたら、以下のコマンドでサンプルを実行します：
 
 ```shell
 python3 main.py
 ```
 
-## Evaluations
+## 評価
 
 > [!NOTE]
-> These evals are intended to be examples to demonstrate functionality, but will have to be updated and catered to your particular use case.
+> これらの評価は機能性を示すためのサンプルですが、特定のユースケースに合わせて更新・調整する必要があります。
 
-For this example, we run function evals, where we input a conversation, and the expected function call ('None' if no function call is expected).
-The evaluation cases are stored in `eval/eval_cases/` subfolder.
+このサンプルでは、会話と予想される関数呼び出し（関数呼び出しが予想されない場合は'None'）を入力とする機能評価を実行します。
+評価ケースは`eval/eval_cases/`サブフォルダに保存されています。
 
 ```json
 [
   {
     "conversation": [
-      { "role": "user", "content": "My bag was not delivered!" }
+      { "role": "user", "content": "私の荷物が届きませんでした！" }
     ],
     "function": "transfer_to_lost_baggage"
   },
   {
     "conversation": [
-      { "role": "user", "content": "I had some turbulence on my flight" }
+      { "role": "user", "content": "フライト中に乱気流がありました" }
     ],
     "function": "None"
   }
 ]
 ```
 
-The script 'function_evals.py' will run the evals. Make sure to set `n` to the number
-of times you want to run each particular eval. To run the script from the root airline folder, execute:
+'function_evals.py'スクリプトが評価を実行します。特定の評価を実行したい回数を`n`に設定してください。ルートの航空会社フォルダからスクリプトを実行するには、以下のコマンドを実行します：
 
 ```bash
 cd evals
-python3 function_evals.py
+python function_evals.py
 ```
 
-The results of these evaluations will be stored in `evals/eval_results/`
+これらの評価の結果は`evals/eval_results/`に保存されます。
