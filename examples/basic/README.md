@@ -1,6 +1,6 @@
 # Swarm Basic: 多機能エージェントシステムの基礎
 
-![](docs/Sample01.png)
+![](https://raw.githubusercontent.com/Sunwood-ai-labs/swarm-sample-box/refs/heads/main/docs/Sample01.png)
 
 このフォルダには、Swarmの主要な機能を示す基本的な例が含まれています。これらの例を通じて、Swarmの核心的な機能と、それらを組み合わせて複雑なAIシステムを構築する方法を学ぶことができます。
 
