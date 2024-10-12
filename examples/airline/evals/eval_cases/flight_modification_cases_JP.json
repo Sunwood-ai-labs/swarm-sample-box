@@ -1,0 +1,20 @@
+[
+    {
+        "conversation": [
+            {"role": "user", "content": "フライトを1日早く変更したいです！"}
+        ],
+        "function": "transfer_to_flight_change"
+    },
+    {
+        "conversation": [
+            {"role": "user", "content": "フライトをキャンセルしたいです。個人的な都合で行けなくなってしまいました"}
+        ],
+        "function": "transfer_to_flight_cancel"
+    },
+    {
+        "conversation": [
+            {"role": "user", "content": "このフライトはもう必要ありません"}
+        ],
+        "function": "None"
+    }
+  ]
