@@ -48,13 +48,6 @@ class GitHubService:
             logger.info(f"最新のコミット: {latest_commit.sha}")
 
             # タグの存在確認
-            try:
-                self.repo.get_git_ref(f"refs/tags/{tag_name}")
-                logger.info(f"タグ {tag_name} は既に存在します。")
-            except Exception:
-                logger.info(f"タグ {tag_name} が存在しないため、作成します。")
-                self.repo.create_git_ref(f"refs/tags/{tag_name}", latest_commit.sha)
-
             if header_image_url:
                 release_notes = f"![Release Header]({header_image_url})\n\n{release_notes}"
             
