@@ -1,10 +1,11 @@
 import sqlite3
 
-# global connection
+# グローバル接続
 conn = None
 
 
 def get_connection():
+    """データベース接続を取得する関数"""
     global conn
     if conn is None:
         conn = sqlite3.connect("application.db")
@@ -12,11 +13,12 @@ def get_connection():
 
 
 def create_database():
-    # Connect to a single SQLite database
+    """データベースとテーブルを作成する関数"""
+    # SQLiteデータベースに接続
     conn = get_connection()
     cursor = conn.cursor()
 
-    # Create Users table
+    # Usersテーブルの作成
     cursor.execute(
         """
         CREATE TABLE IF NOT EXISTS Users (
@@ -30,7 +32,7 @@ def create_database():
     """
     )
 
-    # Create PurchaseHistory table
+    # PurchaseHistoryテーブルの作成
     cursor.execute(
         """
         CREATE TABLE IF NOT EXISTS PurchaseHistory (
@@ -44,6 +46,7 @@ def create_database():
     """
     )
 
+    # Productsテーブルの作成
     cursor.execute(
         """
         CREATE TABLE IF NOT EXISTS Products (
@@ -54,15 +57,16 @@ def create_database():
         """
     )
 
-    # Save (commit) the changes
+    # 変更を保存（コミット）
     conn.commit()
 
 
 def add_user(user_id, first_name, last_name, email, phone):
+    """ユーザーを追加する関数"""
     conn = get_connection()
     cursor = conn.cursor()
 
-    # Check if the user already exists
+    # ユーザーが既に存在するかチェック
     cursor.execute("SELECT * FROM Users WHERE user_id = ?", (user_id,))
     if cursor.fetchone():
         return
@@ -78,14 +82,15 @@ def add_user(user_id, first_name, last_name, email, phone):
 
         conn.commit()
     except sqlite3.Error as e:
-        print(f"Database Error: {e}")
+        print(f"データベースエラー: {e}")
 
 
 def add_purchase(user_id, date_of_purchase, item_id, amount):
+    """購入履歴を追加する関数"""
     conn = get_connection()
     cursor = conn.cursor()
 
-    # Check if the purchase already exists
+    # 購入履歴が既に存在するかチェック
     cursor.execute(
         """
         SELECT * FROM PurchaseHistory
@@ -94,7 +99,6 @@ def add_purchase(user_id, date_of_purchase, item_id, amount):
         (user_id, item_id, date_of_purchase),
     )
     if cursor.fetchone():
-        # print(f"Purchase already exists for user_id {user_id} on {date_of_purchase} for item_id {item_id}.")
         return
 
     try:
@@ -108,10 +112,11 @@ def add_purchase(user_id, date_of_purchase, item_id, amount):
 
         conn.commit()
     except sqlite3.Error as e:
-        print(f"Database Error: {e}")
+        print(f"データベースエラー: {e}")
 
 
 def add_product(product_id, product_name, price):
+    """製品を追加する関数"""
     conn = get_connection()
     cursor = conn.cursor()
 
@@ -126,10 +131,11 @@ def add_product(product_id, product_name, price):
 
         conn.commit()
     except sqlite3.Error as e:
-        print(f"Database Error: {e}")
+        print(f"データベースエラー: {e}")
 
 
 def close_connection():
+    """データベース接続を閉じる関数"""
     global conn
     if conn:
         conn.close()
@@ -137,10 +143,11 @@ def close_connection():
 
 
 def preview_table(table_name):
-    conn = sqlite3.connect("application.db")  # Replace with your database name
+    """テーブルの内容をプレビューする関数"""
+    conn = sqlite3.connect("application.db")
     cursor = conn.cursor()
 
-    cursor.execute(f"SELECT * FROM {table_name} LIMIT 5;")  # Limit to first 5 rows
+    cursor.execute(f"SELECT * FROM {table_name} LIMIT 5;")  # 最初の5行に制限
 
     rows = cursor.fetchall()
 
@@ -150,25 +157,25 @@ def preview_table(table_name):
     conn.close()
 
 
-# Initialize and load database
 def initialize_database():
+    """データベースを初期化し、サンプルデータを追加する関数"""
     global conn
 
-    # Initialize the database tables
+    # データベーステーブルの初期化
     create_database()
 
-    # Add some initial users
+    # 初期ユーザーの追加
     initial_users = [
         (1, "Alice", "Smith", "alice@test.com", "123-456-7890"),
         (2, "Bob", "Johnson", "bob@test.com", "234-567-8901"),
         (3, "Sarah", "Brown", "sarah@test.com", "555-567-8901"),
-        # Add more initial users here
+        # 必要に応じて初期ユーザーを追加
     ]
 
     for user in initial_users:
         add_user(*user)
 
-    # Add some initial purchases
+    # 初期購入履歴の追加
     initial_purchases = [
         (1, "2024-01-01", 101, 99.99),
         (2, "2023-12-25", 100, 39.99),
@@ -178,10 +185,11 @@ def initialize_database():
     for purchase in initial_purchases:
         add_purchase(*purchase)
 
+    # 初期製品の追加
     initial_products = [
-        (7, "Hat", 19.99),
-        (8, "Wool socks", 29.99),
-        (9, "Shoes", 39.99),
+        (7, "帽子", 19.99),
+        (8, "ウールソックス", 29.99),
+        (9, "靴", 39.99),
     ]
 
     for product in initial_products:
