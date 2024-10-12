@@ -14,12 +14,12 @@ def create_release_headers(tag: str, output_dir: str, font_name: str):
 
     # タグ付きの画像を生成
     tagged_output_path = os.path.join(output_dir, f"release_header_{tag}.png")
-    image_service.generate_header_image(tag, tagged_output_path, font_name, use_smooth_area=True, target_ratio=0.8)
+    image_service.generate_header_image(tag, tagged_output_path, font_name, use_smooth_area=False, target_ratio=0.8)
     logger.success(f"タグ付きヘッダー画像を生成しました: {tagged_output_path}")
 
     # 最新版の画像を生成
     latest_output_path = os.path.join(output_dir, "release_header_latest.png")
-    image_service.generate_header_image(tag, latest_output_path, font_name, use_smooth_area=True, target_ratio=0.8)
+    image_service.generate_header_image(tag, latest_output_path, font_name, use_smooth_area=False, target_ratio=0.8)
     logger.success(f"最新版ヘッダー画像を生成しました: {latest_output_path}")
 
 if __name__ == "__main__":
