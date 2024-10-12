@@ -133,10 +133,10 @@ Swarm Sample Boxは、OpenAIが開発した実験的なマルチエージェン�
 
 ## 📚 サンプル一覧
 
-### 1. Basic
+### [1. Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic)
 基本的なSwarmの機能を紹介する最小限の実装例です。
 
-### 2. Airline
+### [2. Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline)
 航空会社の顧客サービスを模したマルチエージェントセットアップです。
 
 ### 3. Personal Shopper
