@@ -5,11 +5,15 @@ from config import get_settings
 class GitHubService:
     def __init__(self):
         self.settings = get_settings()
-        # self.g = Github(self.settings.GITHUB_TOKEN)
-        # self.g = Github(self.settings.YOUR_PERSONAL_ACCESS_TOKEN)
         self.g = Github(self.settings.YOUR_PERSONAL_ACCESS_TOKEN_IRIS)
-        self.repo = self.g.get_repo(self.settings.GITHUB_REPOSITORY)
-        logger.debug(f"Using token: {self.settings.YOUR_PERSONAL_ACCESS_TOKEN[:5]}...")
+        try:
+            self.repo = self.g.get_repo(self.settings.GITHUB_REPOSITORY)
+            logger.info(f"リポジトリ情報: {self.repo.full_name}, Owner: {self.repo.owner.login}")
+        except Exception as e:
+            logger.error(f"リポジトリの取得中にエラーが発生しました: {str(e)}")
+            raise
+        logger.debug(f"Using token: {self.settings.YOUR_PERSONAL_ACCESS_TOKEN_IRIS[:5]}...")
+
 
     def get_issue(self, issue_number: int = None):
         issue_number = issue_number or self.settings.ISSUE_NUMBER
@@ -38,17 +42,27 @@ class GitHubService:
         ヘッダー画像のURLが提供された場合、それをリリースノートの先頭に追加します。
         """
         try:
+            # タグの存在確認
+            try:
+                self.repo.get_git_ref(f"refs/tags/{tag_name}")
+                logger.info(f"タグ {tag_name} は既に存在します。")
+            except Exception:
+                logger.info(f"タグ {tag_name} が存在しないため、作成します。")
+                self.repo.create_git_ref(f"refs/tags/{tag_name}", self.repo.get_commits()[0].sha)
+
             if header_image_url:
                 release_notes = f"![Release Header]({header_image_url})\n\n{release_notes}"
             
-            self.repo.create_git_release(
+            release = self.repo.create_git_release(
                 tag=tag_name,
                 name=f"Release {tag_name}",
                 message=release_notes,
                 draft=False,
                 prerelease=False
             )
-            logger.info(f"GitHubリリース {tag_name} を作成しました。")
+            logger.info(f"GitHubリリース {tag_name} を作成しました。URL: {release.html_url}")
         except Exception as e:
             logger.error(f"GitHubリリースの作成中にエラーが発生しました: {str(e)}")
+            logger.error(f"リポジトリ: {self.repo.full_name}, タグ: {tag_name}")
+            logger.error(f"エラーの詳細: {e.__class__.__name__}: {str(e)}")
             raise
