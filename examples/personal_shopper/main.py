@@ -3,13 +3,14 @@ import random
 
 import database
 from swarm import Agent
-from swarm.agents import create_triage_agent
+# from swarm.agents import create_triage_agent
 from swarm.repl import run_demo_loop
 
 
 def refund_item(user_id, item_id):
-    """Initiate a refund based on the user ID and item ID.
-    Takes as input arguments in the format '{"user_id":"1","item_id":"3"}'
+    """
+    ユーザーIDとアイテムIDに基づいて払い戻しを開始する関数
+    入力引数のフォーマット: '{"user_id":"1","item_id":"3"}'
     """
     conn = database.get_connection()
     cursor = conn.cursor()
@@ -23,16 +24,17 @@ def refund_item(user_id, item_id):
     result = cursor.fetchone()
     if result:
         amount = result[0]
-        print(f"Refunding ${amount} to user ID {user_id} for item ID {item_id}.")
+        print(f"ユーザーID {user_id} のアイテムID {item_id} に対して ${amount} を払い戻します。")
     else:
-        print(f"No purchase found for user ID {user_id} and item ID {item_id}.")
-    print("Refund initiated")
+        print(f"ユーザーID {user_id} とアイテムID {item_id} に対する購入履歴が見つかりません。")
+    print("払い戻しが開始されました")
 
 
 def notify_customer(user_id, method):
-    """Notify a customer by their preferred method of either phone or email.
-    Takes as input arguments in the format '{"user_id":"1","method":"email"}'"""
-
+    """
+    顧客を電話またはメールで通知する関数
+    入力引数のフォーマット: '{"user_id":"1","method":"email"}'
+    """
     conn = database.get_connection()
     cursor = conn.cursor()
     cursor.execute(
@@ -46,18 +48,20 @@ def notify_customer(user_id, method):
     if user:
         email, phone = user
         if method == "email" and email:
-            print(f"Emailed customer {email} a notification.")
+            print(f"顧客 {email} に通知メールを送信しました。")
         elif method == "phone" and phone:
-            print(f"Texted customer {phone} a notification.")
+            print(f"顧客 {phone} に通知SMSを送信しました。")
         else:
-            print(f"No {method} contact available for user ID {user_id}.")
+            print(f"ユーザーID {user_id} の {method} 連絡先が利用できません。")
     else:
-        print(f"User ID {user_id} not found.")
+        print(f"ユーザーID {user_id} が見つかりません。")
 
 
 def order_item(user_id, product_id):
-    """Place an order for a product based on the user ID and product ID.
-    Takes as input arguments in the format '{"user_id":"1","product_id":"2"}'"""
+    """
+    ユーザーIDと製品IDに基づいて製品を注文する関数
+    入力引数のフォーマット: '{"user_id":"1","product_id":"2"}'
+    """
     date_of_purchase = datetime.datetime.now()
     item_id = random.randint(1, 300)
 
@@ -74,60 +78,68 @@ def order_item(user_id, product_id):
     if result:
         product_id, product_name, price = result
         print(
-            f"Ordering product {product_name} for user ID {user_id}. The price is {price}."
+            f"ユーザーID {user_id} の製品 {product_name} を注文しています。価格は {price} です。"
         )
-        # Add the purchase to the database
+        # 購入をデータベースに追加
         database.add_purchase(user_id, date_of_purchase, item_id, price)
     else:
-        print(f"Product {product_id} not found.")
+        print(f"製品ID {product_id} が見つかりません。")
 
 
-# Initialize the database
+# データベースの初期化
 database.initialize_database()
 
-# Preview tables
+# テーブルのプレビュー
 database.preview_table("Users")
 database.preview_table("PurchaseHistory")
 database.preview_table("Products")
 
-# Define the agents
 
+# エージェント間転送関数
+def transfer_to_sales_agent():
+    return sales_agent
+
+def transfer_to_refunds_agent():
+    return refunds_agent
+
+# エージェントの定義
 refunds_agent = Agent(
-    name="Refunds Agent",
-    description=f"""You are a refund agent that handles all actions related to refunds after a return has been processed.
-    You must ask for both the user ID and item ID to initiate a refund. Ask for both user_id and item_id in one message.
-    If the user asks you to notify them, you must ask them what their preferred method of notification is. For notifications, you must
-    ask them for user_id and method in one message.""",
+    name="払い戻しエージェント",
+    description="""返品処理後の払い戻しに関するすべてのアクションを処理するエージェントです。
+    払い戻しを開始するには、ユーザーIDとアイテムIDの両方が必要です。両方を1つのメッセージで尋ねてください。
+    ユーザーが通知を希望する場合は、通知方法を尋ねる必要があります。通知の場合、
+    ユーザーIDと通知方法を1つのメッセージで尋ねてください。""",
     functions=[refund_item, notify_customer],
 )
 
 sales_agent = Agent(
-    name="Sales Agent",
-    description=f"""You are a sales agent that handles all actions related to placing an order to purchase an item.
-    Regardless of what the user wants to purchase, must ask for BOTH the user ID and product ID to place an order.
-    An order cannot be placed without these two pieces of inforamation. Ask for both user_id and product_id in one message.
-    If the user asks you to notify them, you must ask them what their preferred method is. For notifications, you must
-    ask them for user_id and method in one message.
+    name="販売エージェント",
+    description="""商品の注文に関するすべてのアクションを処理する販売エージェントです。
+    ユーザーが購入したい商品に関わらず、注文を行うにはユーザーIDと製品IDの両方が必要です。
+    これらの2つの情報なしでは注文を行うことができません。ユーザーIDと製品IDの両方を1つのメッセージで尋ねてください。
+    ユーザーが通知を希望する場合は、通知方法を尋ねる必要があります。通知の場合、
+    ユーザーIDと通知方法を1つのメッセージで尋ねてください。
     """,
     functions=[order_item, notify_customer],
 )
 
-triage_agent = create_triage_agent(
-    name="Triage Agent",
-    instructions=f"""You are to triage a users request, and call a tool to transfer to the right intent.
-    Once you are ready to transfer to the right intent, call the tool to transfer to the right intent.
-    You dont need to know specifics, just the topic of the request.
-    If the user request is about making an order or purchasing an item, transfer to the Sales Agent.
-    If the user request is about getting a refund on an item or returning a product, transfer to the Refunds Agent.
-    When you need more information to triage the request to an agent, ask a direct question without explaining why you're asking it.
-    Do not share your thought process with the user! Do not make unreasonable assumptions on behalf of user.""",
-    agents=[sales_agent, refunds_agent],
-    add_backlinks=True,
+triage_agent = Agent(
+    name="トリアージエージェント",
+    instructions="""ユーザーのリクエストを分類し、適切なインテントに転送するツールを呼び出します。
+    適切なインテントに転送する準備ができたら、ツールを呼び出してください。
+    詳細を知る必要はなく、リクエストのトピックだけを理解すれば十分です。
+    ユーザーのリクエストが注文や商品の購入に関するものであれば、販売エージェントに転送します。
+    ユーザーのリクエストが商品の払い戻しや返品に関するものであれば、払い戻しエージェントに転送します。
+    リクエストをエージェントに振り分けるために更に情報が必要な場合は、理由を説明せずに直接質問してください。
+    ユーザーに思考プロセスを共有しないでください！ユーザーに代わって不合理な仮定をしないでください。""",
+    functions=[transfer_to_sales_agent, transfer_to_refunds_agent],
 )
 
+print("-------------------------------------")
 for f in triage_agent.functions:
     print(f.__name__)
+print("-------------------------------------")
 
 if __name__ == "__main__":
-    # Run the demo loop
+    # デモループの実行
     run_demo_loop(triage_agent, debug=False)
