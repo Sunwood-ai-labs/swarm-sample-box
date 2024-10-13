@@ -85,20 +85,22 @@
   <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/blob/main/docs/README.en.md"><img src="https://img.shields.io/badge/english-document-white.svg" alt="EN doc"></a>
 </h2>
 
-> [!IMPORTANT]
->  swarm-sample-box is a template repository developed using [cline (formerly Claude Dev)](https://github.com/clinebot/cline), [SourceSage](https://github.com/Sunwood-ai-labs/SourceSage), and [claude.ai](https://claude.ai/).  The majority of the release notes, README, and commit messages were generated using the latest AI technologies.
+> **[!IMPORTANT]**
+>  swarm-sample-box is a template repository developed using [cline (formerly Claude Dev)](https://github.com/clinebot/cline), [SourceSage](https://github.com/Sunwood-ai-labs/SourceSage), and [claude.ai](https://claude.ai/).  The majority of the release notes, README, and commit messages were generated using the latest AI technology.
 
 
 ## 🚀 Project Overview
 
-Swarm Sample Box is an AI agent experimentation repository leveraging Swarm, an experimental multi-agent orchestration framework developed by OpenAI. This repository provides a lightweight and flexible solution for efficiently collaborating multiple AI agents to perform complex tasks, supporting developers' research and experimentation. Version: v1.3.1
+Swarm Sample Box is an AI agent experiment repository utilizing Swarm, an experimental multi-agent orchestration framework developed by OpenAI. This repository provides a lightweight and flexible solution for efficiently coordinating multiple AI agents to perform complex tasks, supporting developers' research and experimentation. Version: v1.4.0
 
 ## ✨ Key Features
 
-1. **Diverse Agent Samples:** Provides various examples of AI agent implementations, ranging from basic conversations to complex task processing.
+1. **Diverse Agent Samples:** Provides various AI agent implementation examples, ranging from basic interactions to complex task processing.
 2. **Flexible Customization:** Each sample is easily extensible and modifiable, adaptable to unique use cases.
-3. **Integrated Experimental Environment:** Offers a practical experimental environment, including integration with Docker and vector databases (Qdrant).
+3. **Integrated Experimental Environment:** Offers a practical experimental environment, including Docker integration and vector database (Qdrant) connectivity.
 4. **Automated Evaluation Function:** Some samples include automated evaluation scripts for measuring agent performance.
+5. 🎉 **Sample Question Display Function:** Added a function to display sample questions to the user.
+
 
 ## 🔧 Setup and Usage
 
@@ -133,12 +135,12 @@ Swarm Sample Box is an AI agent experimentation repository leveraging Swarm, an 
 
 ## 📚 Sample List
 
-- [Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic): A minimal implementation example showcasing the basic functions of Swarm.
+- [Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic): A minimal implementation example showcasing basic Swarm functionality.
 - [Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline): A multi-agent setup simulating an airline's customer service.
 - [Personal Shopper](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/personal_shopper): An implementation example of a personal shopping assistant agent.
-- [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): An example of a customer support bot, including document search functionality using Qdrant.
-- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): An implementation example of a triage agent that routes user requests to the appropriate agents.
-- [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): A simple agent implementation for retrieving weather information and performing related tasks.
+- [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): A customer support bot implementation, including document search functionality using Qdrant.
+- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): An implementation example of a triage agent that routes user requests to the appropriate agent.
+- [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): A simple agent implementation for retrieving weather information and related tasks.
 - [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): A sample simulating customer service in a streaming format.
 
 
@@ -150,19 +152,28 @@ Some samples include automated evaluation scripts. To run the evaluation, execut
 pytest evals.py
 ```
 
+## 📦 Upgrade Procedure
+
+1. Clone or pull the latest version of the repository.
+2. Update dependencies with `make install`.
+3. Restart the Docker containers with `docker-compose up -d`. (For Support Bot, also run `make prep`)
+4. Run data preparation scripts with `make prep` for the relevant sample.
+5. Run the application with `make run`.
+
+
 ## 🤝 Contributions
 
 Swarm Sample Box welcomes contributions from the community as an open-source project.  We encourage contributions of all kinds, including adding new samples, improving existing samples, and expanding the documentation.
 
 ## 📄 License
 
-Swarm Sample Box is licensed under the [MIT License](LICENSE).
+Swarm Sample Box is released under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgements
 
-This project is based on the Swarm framework developed by OpenAI. We express our deep gratitude to the Swarm developers. Contributors to this release: Maki, iris-s-coon
+This project is based on the Swarm framework developed by OpenAI.  We express our deep gratitude to the Swarm developers. Contributors to this release: Maki, iris-s-coon
 
 
 ---
 
-Start developing and experimenting with innovative AI agent systems using Swarm Sample Box! For detailed usage instructions and descriptions of each sample, please refer to the README file in the corresponding directory.
+Start developing and experimenting with innovative AI agent systems using Swarm Sample Box! For detailed usage instructions and explanations of each sample, please refer to the README file in the corresponding directory.
