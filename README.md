@@ -91,7 +91,7 @@
 
 ## 🚀 プロジェクト概要
 
-Swarm Sample Boxは、OpenAIが開発した実験的なマルチエージェントオーケストレーションフレームワーク「Swarm」を活用したAIエージェント実験リポジトリです。このリポジトリは、複数のAIエージェントを効率的に連携させ、複雑なタスクを実行するための軽量で柔軟なソリューションを提供し、開発者の研究と実験を支援します。バージョン: v1.2.0
+Swarm Sample Boxは、OpenAIが開発した実験的なマルチエージェントオーケストレーションフレームワーク「Swarm」を活用したAIエージェント実験リポジトリです。このリポジトリは、複数のAIエージェントを効率的に連携させ、複雑なタスクを実行するための軽量で柔軟なソリューションを提供し、開発者の研究と実験を支援します。バージョン: v1.3.1
 
 ## ✨ 主な機能
 
@@ -103,59 +103,50 @@ Swarm Sample Boxは、OpenAIが開発した実験的なマルチエージェン�
 ## 🔧 セットアップと使用方法
 
 1. リポジトリのクローン:
-   ```
+   ```bash
    git clone https://github.com/Sunwood-ai-labs/swarm-sample-box.git
    cd swarm-sample-box
    ```
 
 2. 仮想環境の作成と有効化:
-   ```
+   ```bash
    python -m venv .venv
    source .venv/bin/activate  # Linux/macOS
    .venv\Scripts\activate  # Windows
    ```
 
 3. 依存関係のインストール:
-   ```
+   ```bash
    pip install -r requirements.txt
    ```
 
 4. OpenAI APIキーの設定:
-   ```
+   ```bash
    export OPENAI_API_KEY="your-api-key"
    ```
 
 5. 特定のサンプルの実行:
-   ```
+   ```bash
    cd examples/<サンプル名>
    python main.py
    ```
 
 ## 📚 サンプル一覧
 
-### [1. Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic)
-基本的なSwarmの機能を紹介する最小限の実装例です。
+- [Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic): 基本的なSwarmの機能を紹介する最小限の実装例です。
+- [Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline): 航空会社の顧客サービスを模したマルチエージェントセットアップです。
+- [Personal Shopper](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/personal_shopper): 個人向けショッピングアシスタントエージェントの実装例です。
+- [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
+- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
+- [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。
+- [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。
 
-### [2. Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline)
-航空会社の顧客サービスを模したマルチエージェントセットアップです。
-
-### 3. Personal Shopper
-個人向けショッピングアシスタントエージェントの実装例です。
-
-### 4. Support Bot
-カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
-
-### 5. Triage Agent
-ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
-
-### 6. Weather Agent
-天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。
 
 ## 🧪 評価方法
 
 一部のサンプルには自動評価スクリプトが含まれています。評価を実行するには、サンプルディレクトリ内で以下のコマンドを実行します：
 
-```
+```bash
 pytest evals.py
 ```
 
