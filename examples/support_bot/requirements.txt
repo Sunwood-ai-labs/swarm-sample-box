@@ -1,1 +1,7 @@
 qdrant-client
+pandas
+openai
+loguru
+art
+
+git+https://github.com/openai/swarm.git
