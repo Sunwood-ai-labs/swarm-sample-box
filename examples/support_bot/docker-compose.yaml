@@ -5,3 +5,4 @@ services:
     restart: on-failure
     ports:
       - "6335:6335"
+      - "6333:6333"
