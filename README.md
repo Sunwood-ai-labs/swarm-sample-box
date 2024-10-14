@@ -10,18 +10,73 @@
   <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/blob/main/LICENSE">
     <img alt="License" src="https://img.shields.io/github/license/Sunwood-ai-labs/swarm-sample-box?color=green">
   </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/Sunwood-ai-labs/swarm-sample-box?style=social">
+  </a>
   <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/releases">
     <img alt="GitHub release" src="https://img.shields.io/github/v/release/Sunwood-ai-labs/swarm-sample-box?include_prereleases&style=flat-square">
   </a>
-  <a href="https://github.com/Sunwood-ai-labs/swarm/pulls">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/graphs/commit-activity">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/pulls">
     <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
   </a>
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="Development Status" src="https://img.shields.io/badge/status-active-success.svg">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/Sunwood-ai-labs/swarm-sample-box?style=social">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/watchers">
+    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Sunwood-ai-labs/swarm-sample-box?style=social">
+  </a>
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/graphs/contributors">
+    <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/issues?q=is%3Aissue+is%3Aclosed">
+    <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/pulls?q=is%3Apr+is%3Aclosed">
+    <img alt="GitHub closed PRs" src="https://img.shields.io/github/issues-pr-closed/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub search hit counter" src="https://img.shields.io/github/search/Sunwood-ai-labs/swarm-sample-box/goto">
+  <img alt="GitHub code size" src="https://img.shields.io/github/languages/code-size/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/blob/main/CONTRIBUTING.md">
+    <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant">
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20project%3A&url=https%3A%2F%2Fgithub.com%2FSunwood-ai-labs%2Fswarm-sample-box">
+    <img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSunwood-ai-labs%2Fswarm-sample-box">
+  </a>
+  <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/deployments">
+    <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Sunwood-ai-labs/swarm-sample-box/Production">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/discussions">
+    <img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <img alt="GitHub followers" src="https://img.shields.io/github/followers/Sunwood-ai-labs?style=social">
+  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/y/Sunwood-ai-labs/swarm-sample-box/main">
+  <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/Sunwood-ai-labs/swarm-sample-box/latest">
+
 
   </a>
 </p>
 
-
-
+<p align="center">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/generate-release-notes.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=generate-auto-release-notes">  
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/translate-readme.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=auto-translate-readme">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/issue-review.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=auto-issue-review">
+</p>
 
 <h2 align="center">
   ～ Experimental Playground for AI Agent Orchestration ～
@@ -36,17 +91,18 @@
 
 ## 🚀 プロジェクト概要
 
-Swarm Sample Boxは、[OpenAIが開発した実験的なマルチエージェントオーケストレーションフレームワーク「Swarm」](https://github.com/openai/swarm)を活用したAIエージェント実験リポジトリです。このリポジトリは、複数のAIエージェントを効率的に連携させ、複雑なタスクを実行するための軽量で柔軟なソリューションを提供し、開発者の研究と実験を支援します。バージョン: v1.5.0
+Swarm Sample Boxは、[OpenAIが開発した実験的なマルチエージェントオーケストレーションフレームワーク「Swarm」](https://github.com/openai/swarm)を活用したAIエージェント実験リポジトリです。このリポジトリは、複数のAIエージェントを効率的に連携させ、複雑なタスクを実行するための軽量で柔軟なソリューションを提供し、開発者の研究と実験を支援します。バージョン: v1.3.1
 
 ## ✨ 主な機能
 
-- 多様なエージェントサンプル: 基本的な対話から複雑なタスク処理まで、様々なAIエージェントの実装例を提供
-- 柔軟なカスタマイズ: 各サンプルは容易に拡張・修正可能で、独自のユースケースに適応可能
-- 統合実験環境: Docker環境やベクトルデータベース(Qdrant)との連携など、実践的な実験環境を提供
-- 自動評価機能: 一部のサンプルには自動評価スクリプトが含まれ、エージェントのパフォーマンス測定が可能
-- Gemini Pro 002モデルのサポート
+1. **多様なエージェントサンプル**: 基本的な対話から複雑なタスク処理まで、様々なAIエージェントの実装例を提供
+2. **柔軟なカスタマイズ**: 各サンプルは容易に拡張・修正可能で、独自のユースケースに適応可能
+3. **統合実験環境**: Docker環境やベクトルデータベース(Qdrant)との連携など、実践的な実験環境を提供
+4. **自動評価機能**: 一部のサンプルには自動評価スクリプトが含まれ、エージェントのパフォーマンス測定が可能
+5. 🎉 **サンプル質問表示機能**: ユーザーにサンプル質問を表示する機能を追加しました。
 
-## 🔧 使用方法
+
+## 🔧 セットアップと使用方法
 
 1. リポジトリのクローン:
    ```bash
@@ -77,34 +133,19 @@ Swarm Sample Boxは、[OpenAIが開発した実験的なマルチエージェン
    python main.py
    ```
 
-
-## 📦 インストール手順
-
-`swarm` パッケージは、`requirements.txt`に記載されているように、PyPIではなくGitHubレポジトリからインストールする必要があります。そのため、pipを使用して以下のようにインストールしてください。
-
-```bash
-pip install -r requirements.txt
-# あるいは
-pip install git+https://github.com/openai/swarm.git
-```
-
-## 🆕 最新情報
-
-- トリアージエージェントサンプルのREADMEが大幅に改善され、ワークフロー図、セットアップ手順、評価テスト、ファイル構成、貢献方法、ライセンス情報が追加されました。
-- トリアージエージェントサンプルにGemini Pro 002モデルのサポートが追加されました。
-
-
 ## 📚 サンプル一覧
 
 ### 公式サンプル（日本語化）
 
-- Basic: 基本的なSwarmの機能を紹介する最小限の実装例
-- Airline: 航空会社の顧客サービスを模したマルチエージェントセットアップ
-- Personal Shopper: 個人向けショッピングアシスタントエージェントの実装例
-- Support Bot: カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます
-- Triage Agent: ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例
-- Weather Agent: 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例 (未整備)
-- Customer Service Streaming: ストリーミング形式でのカスタマーサービスを模したサンプル (未整備)
+以下のサンプルは、[OpenAI Swarmの公式リポジトリに記載されているサンプル](https://github.com/openai/swarm/tree/main/examples)を日本語化し、動作可能な形に修正したものです：
+
+- [Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic): 基本的なSwarmの機能を紹介する最小限の実装例です。
+- [Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline): 航空会社の顧客サービスを模したマルチエージェントセットアップです。
+- [Personal Shopper](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/personal_shopper): 個人向けショッピングアシスタントエージェントの実装例です。
+- [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
+- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
+- [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。(🔥未整備)
+- [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。(🔥未整備)
 
 ### オリジナルサンプル
 
@@ -113,11 +154,26 @@ pip install git+https://github.com/openai/swarm.git
 - [準備中] 新しいオリジナルサンプル1: 詳細は近日公開予定
 - [準備中] 新しいオリジナルサンプル2: 詳細は近日公開予定
 
+## 🧪 評価方法
+
+一部のサンプルには自動評価スクリプトが含まれています。評価を実行するには、サンプルディレクトリ内で以下のコマンドを実行します：
+
+```bash
+pytest evals.py
+```
+
+## 📦 アップグレード手順
+
+1. リポジトリの最新版をクローンまたはプルします。
+2. `make install` で依存関係を更新します。
+3. `docker-compose up -d` でDockerコンテナを再起動します。  (Support Bot の場合 `make prep` も実行してください)
+4. 該当するサンプルで `make prep` でデータ準備スクリプトを実行します。
+5. `make run`でアプリケーションを実行します。
+
 
 ## 🤝 コントリビューション
 
 Swarm Sample Boxは、オープンソースプロジェクトとしてコミュニティからの貢献を歓迎しています。新しいサンプルの追加、既存サンプルの改善、ドキュメントの拡充など、あらゆる形での貢献をお待ちしています。
-
 
 ## 📄 ライセンス
 
