@@ -1,0 +1,7 @@
+openai
+loguru
+art
+colorama
+pyfiglet
+
+git+https://github.com/openai/swarm.git
