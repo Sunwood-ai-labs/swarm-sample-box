@@ -143,20 +143,27 @@ swarm-sample-boxを使用するためのインストール手順は「使用方�
 - weather_agentサンプルに`requirements.txt`が追加されました。
 - weather_agentサンプルのREADMEが大幅に改善されました。
 
-
 ## 📚 サンプル一覧
 
 ### 公式サンプル（日本語化）
 
-以下のサンプルは、[OpenAI Swarmの公式リポジトリに記載されているサンプル](https://github.com/openai/swarm/tree/main/examples)を日本語化し、動作可能な形に修正したものです：
+以下のサンプルは、[OpenAI Swarmの公式リポジトリに記載されているサンプル](https://github.com/openai/swarm/tree/main/examples)を日本語化し、動作可能な形に修正したものです。難易度順に並べています：
+（🔥の数は、各サンプルの相対的な複雑さと学習曲線を表しています。）
 
-- [Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic): 基本的なSwarmの機能を紹介する最小限の実装例です。
-- [Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline): 航空会社の顧客サービスを模したマルチエージェントセットアップです。
-- [Personal Shopper](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/personal_shopper): 個人向けショッピングアシスタントエージェントの実装例です。
-- [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
-- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
-- [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。
-- [実験段階??: Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。
+1. [Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic) 🔥: 基本的なSwarmの機能を紹介する最小限の実装例です。
+
+2. [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent) 🔥🔥: 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。
+
+3. [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent) 🔥🔥: ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
+
+4. [Personal Shopper](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/personal_shopper) 🔥🔥🔥: 個人向けショッピングアシスタントエージェントの実装例です。
+
+5. [Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline) 🔥🔥🔥🔥: 航空会社の顧客サービスを模したマルチエージェントセットアップです。
+
+6. [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot) 🔥🔥🔥🔥🔥: カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
+
+7. [実験段階??: Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming) 🔥🔥🔥🔥🔥: ストリーミング形式でのカスタマーサービスを模したサンプルです。
+
 
 ### オリジナルサンプル
 
@@ -165,6 +172,62 @@ swarm-sample-boxを使用するためのインストール手順は「使用方�
 - [準備中] 新しいオリジナルサンプル1: 詳細は近日公開予定
 - [準備中] 新しいオリジナルサンプル2: 詳細は近日公開予定
 
+## 🚀 Swarm 公式サンプル チュートリアル
+
+Swarmフレームワークを効果的に学ぶために、以下の順序でサンプルに取り組むことをお勧めします。各ステップでは、新しい概念を導入しながら、前のステップで学んだ知識を活用していきます。
+
+### Step 1: Basic 🔥
+**[Basic サンプル](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic)**
+
+このサンプルは、Swarmの基礎を学ぶための最適な出発点です。
+- Swarmの核となる機能を最小限の実装で紹介
+- エージェントの作成、簡単な対話、関数呼び出しなどの基本操作を学習
+- 各機能を個別に理解することで、Swarmの基本的な動作原理を把握
+
+### Step 2: Weather Agent 🔥🔥
+**[Weather Agent サンプル](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent)**
+
+基本を理解したら、単一のエージェントでより実践的な機能を実装してみましょう。
+- 天気情報の取得という具体的なユースケースを通じて学習
+- 単一のエージェントで複数の機能（天気情報取得、メール送信）を扱う方法を理解
+- 基本的な関数呼び出しとエージェントの動作をより深く学習
+
+### Step 3: Triage Agent 🔥🔥
+**[Triage Agent サンプル](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent)**
+
+複数のエージェントを使用する最初のステップです。
+- ユーザーリクエストを適切なエージェントに振り分ける仕組みを学習
+- 複数のエージェント間の相互作用と連携の基本を理解
+- より複雑なシステムの設計方法を学び始める
+
+### Step 4: Personal Shopper 🔥🔥🔥
+**[Personal Shopper サンプル](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/personal_shopper)**
+
+実際のアプリケーションに近い、より複雑なユースケースに挑戦します。
+- ショッピングアシスタントという具体的なビジネスシナリオを通じて学習
+- データベース操作やより高度な関数呼び出しを含む実装を理解
+- 実際のアプリケーション開発により近い経験を積む
+
+### Step 5: Airline 🔥🔥🔥🔥
+**[Airline サンプル](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline)**
+
+複数のエージェントが協調する複雑なシステムに取り組みます。
+- 航空会社の顧客サービスという実践的なビジネスシナリオを模倣
+- 複数のエージェントが協力して問題を解決する方法を学習
+- より大規模で複雑なシステムの設計と実装を経験
+
+### Step 6: Support Bot 🔥🔥🔥🔥🔥
+**[Support Bot サンプル](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot)**
+
+外部システムとの連携を含む、より本格的なアプリケーションを構築します。
+- Qdrantベクトルデータベースを使用した文書検索機能の実装を学習
+- 実際のプロダクション環境により近い構成のシステムを理解
+- 外部サービスとの連携方法や、より高度なデータ処理技術を習得
+
+この順序で学習を進めることで、Swarmフレームワークの基本から応用まで、段階的に理解を深めることができます。各ステップで新しい概念や技術を導入しながら、前のステップで学んだ知識を活用していくことで、効果的に学習を進められます。
+
+始める準備はできましたか？それでは、Step 1のBasicサンプルから始めましょう！🚀
+
 ## 🧪 評価方法
 
 一部のサンプルには自動評価スクリプトが含まれています。評価を実行するには、サンプルディレクトリ内で以下のコマンドを実行します：
@@ -172,7 +235,6 @@ swarm-sample-boxを使用するためのインストール手順は「使用方�
 ```bash
 pytest evals.py
 ```
-
 
 
 ## 📄 ライセンス
