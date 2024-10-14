@@ -91,7 +91,7 @@
 
 ## 🚀 プロジェクト概要
 
-Swarm Sample Boxは、OpenAIが開発した実験的なマルチエージェントオーケストレーションフレームワーク「Swarm」を活用したAIエージェント実験リポジトリです。このリポジトリは、複数のAIエージェントを効率的に連携させ、複雑なタスクを実行するための軽量で柔軟なソリューションを提供し、開発者の研究と実験を支援します。バージョン: v1.4.0
+Swarm Sample Boxは、[OpenAIが開発した実験的なマルチエージェントオーケストレーションフレームワーク「Swarm」](https://github.com/openai/swarm)を活用したAIエージェント実験リポジトリです。このリポジトリは、複数のAIエージェントを効率的に連携させ、複雑なタスクを実行するための軽量で柔軟なソリューションを提供し、開発者の研究と実験を支援します。バージョン: v1.3.1
 
 ## ✨ 主な機能
 
@@ -135,14 +135,24 @@ Swarm Sample Boxは、OpenAIが開発した実験的なマルチエージェン�
 
 ## 📚 サンプル一覧
 
+### 公式サンプル（日本語化）
+
+以下のサンプルは、[OpenAI Swarmの公式リポジトリに記載されているサンプル](https://github.com/openai/swarm/tree/main/examples)を日本語化し、動作可能な形に修正したものです：
+
 - [Basic](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/basic): 基本的なSwarmの機能を紹介する最小限の実装例です。
 - [Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline): 航空会社の顧客サービスを模したマルチエージェントセットアップです。
 - [Personal Shopper](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/personal_shopper): 個人向けショッピングアシスタントエージェントの実装例です。
 - [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
-- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
-- [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。
-- [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。
+- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。(🔥未整備)
+- [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。(🔥未整備)
+- [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。(🔥未整備)
 
+### オリジナルサンプル
+
+このセクションでは、独自に開発したサンプルを紹介する予定です。現在準備中ですので、今後のアップデートをお待ちください。
+
+- [準備中] 新しいオリジナルサンプル1: 詳細は近日公開予定
+- [準備中] 新しいオリジナルサンプル2: 詳細は近日公開予定
 
 ## 🧪 評価方法
 
