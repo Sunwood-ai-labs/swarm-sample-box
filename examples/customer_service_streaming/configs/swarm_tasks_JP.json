@@ -1,0 +1,14 @@
+[
+  {
+    "description": "16の平方根は何ですか？"
+  },
+  {
+    "description": "OpenAIアカウントの新規作成やChatGPTの利用に電話番号認証は必要ですか？",
+    "evaluate": true
+  },
+  {
+    "description": "OpenAIアカウントに登録すると、何個の無料トークンがもらえますか？その回答をme@gmail.comにメールで送信してください。",
+    "iterate": true,
+    "evaluate": true
+  }
+]
