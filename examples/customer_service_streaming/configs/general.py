@@ -12,7 +12,7 @@ class Colors:
 
 test_root = 'tests'
 test_file = 'test_prompts.jsonl'
-tasks_path = 'configs/swarm_tasks.json'
+tasks_path = 'configs/swarm_tasks_JP.json'
 
 #Options are 'assistants' or 'local'
 engine_name = 'local'

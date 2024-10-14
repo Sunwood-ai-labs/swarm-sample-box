@@ -19,9 +19,64 @@
   <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/graphs/commit-activity">
     <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/Sunwood-ai-labs/swarm-sample-box">
   </a>
-    <!-- 多くのバッジは省略 -->
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/pulls">
+    <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square">
+  </a>
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="Development Status" src="https://img.shields.io/badge/status-active-success.svg">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/Sunwood-ai-labs/swarm-sample-box?style=social">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/watchers">
+    <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/Sunwood-ai-labs/swarm-sample-box?style=social">
+  </a>
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/graphs/contributors">
+    <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/issues?q=is%3Aissue+is%3Aclosed">
+    <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/pulls?q=is%3Apr+is%3Aclosed">
+    <img alt="GitHub closed PRs" src="https://img.shields.io/github/issues-pr-closed/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub search hit counter" src="https://img.shields.io/github/search/Sunwood-ai-labs/swarm-sample-box/goto">
+  <img alt="GitHub code size" src="https://img.shields.io/github/languages/code-size/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/blob/main/CONTRIBUTING.md">
+    <img src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" alt="Contributor Covenant">
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20project%3A&url=https%3A%2F%2Fgithub.com%2FSunwood-ai-labs%2Fswarm-sample-box">
+    <img alt="Twitter" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FSunwood-ai-labs%2Fswarm-sample-box">
+  </a>
+  <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/Sunwood-ai-labs/swarm-sample-box">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/deployments">
+    <img alt="GitHub deployments" src="https://img.shields.io/github/deployments/Sunwood-ai-labs/swarm-sample-box/Production">
+  </a>
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/discussions">
+    <img alt="GitHub Discussions" src="https://img.shields.io/github/discussions/Sunwood-ai-labs/swarm-sample-box">
+  </a>
+  <img alt="GitHub followers" src="https://img.shields.io/github/followers/Sunwood-ai-labs?style=social">
+  <img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/Sunwood-ai-labs/swarm-sample-box">
+  <img alt="GitHub commit activity (branch)" src="https://img.shields.io/github/commit-activity/y/Sunwood-ai-labs/swarm-sample-box/main">
+  <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/Sunwood-ai-labs/swarm-sample-box/latest">
+
+
+  </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/generate-release-notes.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=generate-auto-release-notes">  
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/translate-readme.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=auto-translate-readme">
+  <a href="https://github.com/Sunwood-ai-labs/swarm-sample-box/actions/workflows/issue-review.yml">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/Sunwood-ai-labs/swarm-sample-box/generate-release-notes.yml?label=auto-issue-review">
+</p>
 
 <h2 align="center">
   ～ Experimental Playground for AI Agent Orchestration ～
@@ -101,7 +156,7 @@ swarm-sample-boxを使用するためのインストール手順は「使用方�
 - [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
 - [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
 - [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。
-- [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。(🔥未整備)
+- [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。
 
 ### オリジナルサンプル
 
