@@ -156,7 +156,7 @@ swarm-sample-boxを使用するためのインストール手順は「使用方�
 - [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
 - [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
 - [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。
-- [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。
+- [実験段階??: Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。
 
 ### オリジナルサンプル
 
