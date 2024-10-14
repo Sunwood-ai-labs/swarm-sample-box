@@ -2,9 +2,6 @@ from swarm import Agent
 from loguru import logger
 from art import text2art
 
-# Display ASCII art
-print(text2art("Triage Agent"))
-print(text2art("Agents"))
 
 # このスクリプトは、トリアージ、販売、返金の各エージェントとその機能を定義します。
 # エージェント間の移動を可能にする転送機能も含まれています。
@@ -32,7 +29,7 @@ triage_agent = Agent(
 logger.info("販売エージェントを定義しています")
 sales_agent = Agent(
     name="販売エージェント",
-    instructions="蜂の販売に非常に熱心になってください。",
+    instructions="販売に対して非常に熱心になってください。",  # ここを修正
 )
 
 logger.info("返金エージェントを定義しています")

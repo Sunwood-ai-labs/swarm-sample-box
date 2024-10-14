@@ -4,7 +4,7 @@ from loguru import logger
 from art import text2art
 
 # Display ASCII art
-print(text2art("Triage Agent"))
+print(text2art("Triage Agent" ,font="rnd-small"))
 print(text2art("Main Runner"))
 
 # このスクリプトは、トリアージエージェントを使用してデモループを実行します。
