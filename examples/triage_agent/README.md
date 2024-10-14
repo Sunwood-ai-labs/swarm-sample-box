@@ -5,6 +5,13 @@ to a sales or refunds agent.
 
 ## Setup
 
+PS C:\Prj\swarm-sample-box\examples\triage_agent> uv venv
+Using Python 3.10.15
+Creating virtualenv at: .venv
+Activate with: .venv\Scripts\activate
+PS C:\Prj\swarm-sample-box\examples\triage_agent> .venv\Scripts\activate
+(triage_agent) PS C:\Prj\swarm-sample-box\examples\triage_agent> uv pip install -r requirements.txt
+
 To run the triage agent Swarm:
 
 1. Run
