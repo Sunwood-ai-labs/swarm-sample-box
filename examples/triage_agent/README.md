@@ -15,6 +15,9 @@
 以下の図は、エージェント間の相互作用とワークフローを示しています：
 
 ```mermaid
+%%{init:{'theme':'base','themeVariables':{'primaryColor':'#024959','primaryTextColor':'#F2C335','primaryBorderColor':'#F2AE30','lineColor':'#A1A2A6','secondaryColor':'#593E25','tertiaryColor':'#F2C335','noteTextColor':'#024959','noteBkgColor':'#F2C335','textColor':'#024959','fontSize':'18px'}}}%%
+
+
 graph TD
     A[ユーザー入力] --> B{トリアージエージェント}
     B -->|販売関連| C[販売エージェント]
