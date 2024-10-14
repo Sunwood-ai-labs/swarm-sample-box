@@ -143,7 +143,7 @@ Swarm Sample Boxは、[OpenAIが開発した実験的なマルチエージェン
 - [Airline](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/airline): 航空会社の顧客サービスを模したマルチエージェントセットアップです。
 - [Personal Shopper](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/personal_shopper): 個人向けショッピングアシスタントエージェントの実装例です。
 - [Support Bot](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/support_bot): カスタマーサポート向けボットの実装例で、Qdrantを使用した文書検索機能を含みます。
-- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。(🔥未整備)
+- [Triage Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/triage_agent): ユーザーリクエストを適切なエージェントに振り分けるトリアージエージェントの実装例です。
 - [Weather Agent](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/weather_agent): 天気情報の取得と関連タスクを行うシンプルなエージェントの実装例です。(🔥未整備)
 - [Customer Service Streaming](https://github.com/Sunwood-ai-labs/swarm-sample-box/tree/main/examples/customer_service_streaming): ストリーミング形式でのカスタマーサービスを模したサンプルです。(🔥未整備)
 
