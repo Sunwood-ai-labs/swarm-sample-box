@@ -31,3 +31,6 @@ langfuse
 .Gaiah.md
 spellbook
 eval_results
+
+evals
+issue_creator.log
